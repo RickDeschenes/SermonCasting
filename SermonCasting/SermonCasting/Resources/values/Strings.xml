@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="Loading">... Loading ...</string>
+  <string name="Loading2">... Please wait ...</string>
+  <string name="Play">Play</string>
+  <string name="Pause">Pause</string>
+  <string name="Stop">Stop</string>
+  <string name="DropDown">...</string>
+  <string name="Versions">Version: ESV</string>
+  <string name="AutoPlay">Auto Play</string>
+  <string name="ApplicationName">Anotherdad® Sermon Casting®</string>
+  <string name="From">Sermon Casting®, by Anotherdad® Software</string>
+  <string name="Church">Church</string>
+  <string name="Back">Back</string>
+  <string name="Passage1">Psg 1</string>
+  <string name="Temp">Seelcted Sermon:</string>
+</resources>

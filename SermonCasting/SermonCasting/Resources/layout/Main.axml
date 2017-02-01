@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/Main">
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Churches">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/TitleBar"
+            android:layout_marginBottom="5dp">
+            <ImageView
+                android:src="@drawable/adicon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:id="@+id/Icon"
+                android:scaleType="fitXY"
+                android:paddingTop="5px"
+                android:paddingRight="5px"
+                android:paddingLeft="5px"
+                android:paddingBottom="5px" />
+            <TextView
+                android:text="@string/ApplicationName"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/titleText"
+                android:textStyle="bold"
+                android:textAlignment="center"
+                android:gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginEnd="-25px"
+                android:layout_marginTop="20px" />
+            <Button
+                android:layout_height="32dp"
+                android:id="@+id/settingsButton"
+                android:textAllCaps="false"
+                android:text=" ***"
+                android:layout_width="48dp"
+                android:layout_marginRight="-11dp"
+                android:rotation="90" />
+        </LinearLayout>
+        <ListView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/churchList" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Controls">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ControlLayout">
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/playButton"
+                android:text="@string/Play"
+                android:textAllCaps="false" />
+            <Button
+                android:layout_width="70dp"
+                android:layout_height="40dp"
+                android:id="@+id/stopButton"
+                android:text="@string/Stop"
+                android:textAllCaps="false" />
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/frameLayout1"
+                android:layout_weight="1"
+                android:layout_gravity="fill_horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px">
+                <TextView
+                    android:text="Version: ESV"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/versionText"
+                    android:layout_marginRight="0.0dp"
+                    android:gravity="center_vertical" />
+            </FrameLayout>
+            <Button
+                android:id="@+id/churchButton"
+                android:layout_width="70dp"
+                android:layout_gravity="right"
+                android:layout_height="40dp"
+                android:text="@string/Church"
+                android:textAllCaps="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Slider">
+            <TextView
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/currentText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+            <FrameLayout
+                android:minWidth="100dp"
+                android:minHeight="22dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/frameLayout2"
+                android:layout_weight="1" />
+            <TextView
+                android:text="00:00"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:id="@+id/durationText"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_gravity="right" />
+        </LinearLayout>
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="40px" />
+        <TextView
+            android:text="@string/Temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/selectedText" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/layoutList">
+        <ListView
+            android:minWidth="250px"
+            android:minHeight="250px"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/playList"
+            android:background="@drawable/adbackground"
+            android:choiceMode="singleChoice" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:minWidth="25px"
+        android:minHeight="25px"
+        android:id="@+id/layoutWeb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <HorizontalScrollView
+            android:minWidth="25px"
+            android:minHeight="25px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/horizontalScrollView1">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:minWidth="25px"
+                android:minHeight="25px"
+                android:id="@+id/linearTabs"
+                android:scrollbars="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </HorizontalScrollView>
+        <android.webkit.WebView
+            android:id="@+id/webView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/Passage1"
+            android:id="@+id/passageButton1"
+            android:textAllCaps="false"
+            android:tag="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+    </LinearLayout>
+</LinearLayout>

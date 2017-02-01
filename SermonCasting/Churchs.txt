@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SermonCasting>
+  <Church>
+    <string name="Title">Faith Journey Fellowship podcasts</string>
+    <string name="Name">Faith Journey Fellowship, Bentonville, AR</string>
+    <string name="Website">http://www.faithjourney.us</string>
+    <string name="Feed">http://faithjourney.sermonpodcasts.net/audio/rss.xml</string>
+    <string name="IconUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/fjicon32.png</string>
+    <string name="BackgroundUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/fjbackground.jpg</string>
+  </Church>
+  <Church>
+    <string name="Title">Cornerstone Baptist Church podcasts</string>
+    <string name="Name">Cornerstone Baptist Church, Bentonville, AR</string>
+    <string name="Website">http://cbcbentonville.com/</string>
+    <string name="Feed">http://www.cbcbentonville.com/sermonpodcast.php?siteid=2733</string>
+    <string name="IconUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/cbicon32.png</string>
+    <string name="BackgroundUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/cbbackground.png</string>
+  </Church>
+  <Church>
+    <string name="Title">Glorious Grace Fellowship podcasts</string>
+    <string name="Name">Glorious Grace Fellowship, Rogers, AR</string>
+    <string name="Website">http://glorious-grace.org/</string>
+    <string name="Feed">http://glorious-grace.org/podcast/feed.xml</string>
+    <string name="IconUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/ggicon32.png</string>
+    <string name="BackgroundUrl">http://www.faithjourney.us/wp-content/uploads/2016/11/ggbackground.png</string>
+  </Church>
+</SermonCasting>
